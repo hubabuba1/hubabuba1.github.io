@@ -1,0 +1,117 @@
+input[type=password] {
+    width: 500px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   	font-family: Arial;
+	font-size: 14px;
+}
+input[type=text] {
+    width: 500px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   	font-family: Arial;
+	font-size: 14px;
+}
+input[type=email] {
+    width: 500px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   	font-family: Arial;
+	font-size: 14px;
+}
+
+h1 {
+	font-family: Arial;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 40px;
+}
+h2 {
+	font-family: "Helvetica";
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 18px;
+}
+h3 {
+	font-family: Arial;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 18px;
+	color: #4d79ff;
+}
+h4 {
+	font-family: Arial;
+	font-size: 11px;
+	font-style:normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 23px;
+}
+.error {
+	font-family: Arial;
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 20px;
+	color:#ff1a1a;
+}
+a:link {
+ text-decoration:none;
+ color: #4d79ff;
+}
+a:visited {
+ text-decoration:none;
+ color: #4d79ff;
+}
+
+
+
+    @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+#loading {
+    border: 1px solid #000;
+    border-right: 0;
+    border-bottom: 0;
+    -webkit-border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+    -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name:             rotate;
+    -webkit-animation-duration:         1.0s;
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey 16 */
+    border-top: 6px solid rgba(77,86,92,0.87); /* #3498db Blue */
+    border-radius: 50%;
+    width: 60px;/*120*/
+    height: 60px;/*120*/
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 250px;
+    left: 48%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
